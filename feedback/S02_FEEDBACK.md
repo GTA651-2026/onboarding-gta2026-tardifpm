@@ -1,6 +1,6 @@
 # Rétroaction automatisée -- S02 (Sélectionner des solutions IA : décision, opérations, productivité)
 
-_Générée le 2026-05-26T14:37:33+00:00 -- Run `20260526T140803Z-ec457158`_
+_Générée le 2026-05-28T17:57:37+00:00 -- Run `20260528T172647Z-afdf4262`_
 
 Ce document est produit par un pipeline reproductible (vérification SQL déterministe + analyse LLM du brief et de la déclaration IA). Une revue humaine précède toujours sa publication. **À ce stade expérimental, aucune note ni étiquette de niveau n'est diffusée : l'objectif est purement formatif.**
 
@@ -13,33 +13,55 @@ La vérification automatique n'a pas pu être réalisée (gate non applicable (t
 
 ## 2. Rétroaction pédagogique sur le brief
 
-> Le livrable est un gabarit de travail bien structuré mais reste non remplis: il ne contient pas d'évaluations, de recommandations ni d'artefacts exploitables. Remplissez la grille avec données chiffrées, justifications et preuves de validation, puis ajoutez commits et instructions reproductibles.
+> Le rendu est essentiellement un gabarit non renseigné : les tableaux et sections demandées restent vides, ce qui empêche toute évaluation. Complétez les contextes, remplissez la grille avec justifications factuelles et proposez des recommandations distinctes par contexte pour rendre le brief défendable devant un comité.
 
 ### Observations par dimension
 
-**Model quality**
-- Observation : Le document n'inclut aucun schéma ni modèle décisionnel rempli ; la grille comparative est laissée vide pour chaque critère.
-- Piste d'amélioration : Remplir la grille avec un schéma de décision explicite (grain, mesures, dimensions) qui répond directement à la question de sélection par contexte.
+**Contexte organisationnel**
+- Observation : Le document contient des placeholders (« Décrivez brièvement la PME : secteur, maturité numérique, budget IA approximatif, équipe IT. ») sans description réelle des contextes.
+- Piste d'amélioration : Remplir les blocs de contexte pour la PME et la grande entreprise en précisant secteur, taille, maturité numérique, budget IA et équipe IT (chiffres ou estimations).
 
-**Validation quality**
-- Observation : Aucune vérification ou requête de validation n'est fournie pour démontrer que les choix ou scores sont vérifiables.
-- Piste d'amélioration : Ajouter des contrôles reproductibles (ex. tableaux d'évaluation chiffrés et scripts de vérification) et documenter le traitement des cas limites.
+**Justification criteres**
+- Observation : La grille de comparaison est vide : les cellules pour Impact, Faisabilité, Coût et Risque sont laissées vides pour chaque agent.
+- Piste d'amélioration : Remplir chaque cellule de la grille avec une justification factuelle ou une hypothèse vérifiable pour les quatre critères et pour les trois agents dans chaque contexte.
 
-**Executive justification**
-- Observation : Les sections 'Recommandation pour la PME' et 'Recommandation pour la grande entreprise' sont présentes comme gabarit mais non remplies par des recommandations décisionnelles.
-- Piste d'amélioration : Rédiger pour chaque contexte une recommandation de 2–3 phrases en langage d'affaires, appuyée par les critères chiffrés de la grille.
+**Role specialise identifie**
+- Observation : La ligne « Rôle spécialisé orchestré » est présente mais les cellules sont vides, aucun spécialiste nommé.
+- Piste d'amélioration : Nommer précisément le rôle métier remplacé/augmenté pour chaque agent (ex. « analyste crédit », « responsable ventes ») et expliquer la valeur métier créée.
 
-**Process trace**
-- Observation : Aucune trace de commits ni note IA effective n'est fournie dans le brief (seulement une instruction de mise à jour de ai-usage.md).
-- Piste d'amélioration : Fournir un journal de commits incrémentaux (≥3) avec messages et une note IA précisant outil, usage et validation humaine.
+**Recommandation argumentee**
+- Observation : Les sections « Recommandation pour la PME » et « Recommandation pour la grande entreprise » sont des placeholders sans recommandation effective.
+- Piste d'amélioration : Formuler une recommandation distincte par contexte (2–3 phrases) et expliquer pourquoi les autres options ont été écartées en termes de compromis valeur/risque.
 
-**Reproducibility**
-- Observation : Aucun artefact exécutable ou instructions reproductibles (scripts, DuckDB, README) n'accompagnent la grille.
-- Piste d'amélioration : Inclure un script ou checklist reproduisant l'évaluation et un README clair pour qu'un pair puisse reproduire le résultat en <5 minutes.
+**Role specialise**
+- Observation : Aucune identification précise du rôle métier orchestré par l'agent n'est fournie dans les tableaux.
+- Piste d'amélioration : Préciser quel expert humain chaque agent remplace ou augmente et pourquoi ce rôle est stratégique pour l'organisation choisie.
+
+**Probleme affaires**
+- Observation : Le brief propose de « Décrire brièvement la PME » mais n'énonce aucun problème d'affaires spécifique (ex. taux, délai, coût).
+- Piste d'amélioration : Formuler en 1–2 phrases le problème d'affaires pour chaque contexte (chiffré ou contextualisé) en langage exécutif et lié à l'organisation choisie.
+
+**Valeur creee**
+- Observation : Aucune valeur quantifiée ou qualitative n'est indiquée dans la grille ou la synthèse — les cellules restent vides.
+- Piste d'amélioration : Estimer la valeur créée par chaque agent (chiffres ou ordre de grandeur) et relier explicitement le rôle orchestré à l'impact organisationnel.
+
+**Risque mitigation**
+- Observation : La colonne « Risque principal (et mitigation concrète) » est vide pour tous les agents.
+- Piste d'amélioration : Identifier un risque principal par agent et proposer une mitigation concrète et actionnable adaptée au contexte (ex. audit, clauses contractuelles, chiffrement).
+
+**Condition succes**
+- Observation : Aucune condition de succès observable et vérifiable n'est formulée dans le document.
+- Piste d'amélioration : Définir pour chaque contexte une condition de succès mesurable (indicateur et horizon temporel, ex. adoption >80% en 6 mois) reliée au contexte organisationnel.
+
+**Ai disclosure**
+- Observation : Le brief demande de mettre à jour ai-usage.md, mais aucun contenu d'ai-usage.md n'est inclus dans le dépôt présenté.
+- Piste d'amélioration : Ajouter le fichier ai-usage.md à la racine en listant les outils (ou 'aucun'), l'étape d'utilisation, la validation humaine et les limites observées.
+
+_Quelques points appellent une attention particulière lors de la prochaine itération : template_non_renseigné, ai-usage_missing._
 
 ## 3. Déclaration d'utilisation de l'IA
 
-> Le fichier soumis est le gabarit non rempli et ne fournit aucune information sur l'usage de l'IA. Remplissez chaque section avec des détails précis (nom et version de l'outil, étape d'utilisation, validation humaine et limites observées) avant de soumettre à nouveau.
+> La déclaration fournie est un gabarit non rempli — les sections demandées ne contiennent pas d'informations sur l'usage de l'IA. Veuillez compléter chaque rubrique en indiquant précisément l'outil (nom et version), l'étape d'utilisation, la validation humaine et les limites observées.
 
 **Sujets à ajouter ou expliciter pour la prochaine itération :**
 
@@ -50,6 +72,7 @@ La vérification automatique n'a pas pu être réalisée (gate non applicable (t
 
 ## 4. Pistes d'action pour la prochaine itération
 
+- Réviser le brief en tenant compte des observations par dimension de la section 2.
 - Compléter `ai-usage.md` en y ajoutant : outils utilisés (nom + version/modèle).
 - Compléter `ai-usage.md` en y ajoutant : à quelle étape l'IA a été utilisée.
 - Compléter `ai-usage.md` en y ajoutant : comment la sortie a été validée par l'humain.
@@ -59,11 +82,11 @@ La vérification automatique n'a pas pu être réalisée (gate non applicable (t
 
 ## 5. Traçabilité
 
-- **Run ID :** `20260526T140803Z-ec457158`
+- **Run ID :** `20260528T172647Z-afdf4262`
 - **Devoir :** `S02`
 - **Étudiant·e :** `tardifpm`
-- **Commit analysé :** `e55283d`
-- **Audit (côté instructeur) :** `tools/instructor/feedback_pipeline/audit/20260526T140803Z-ec457158/tardifpm/`
+- **Commit analysé :** `18534ce`
+- **Audit (côté instructeur) :** `tools/instructor/feedback_pipeline/audit/20260528T172647Z-afdf4262/tardifpm/`
 - **Prompts (SHA-256) :**
   - `rubric_grader_system` : `505f32d1d8319d66...`
   - `ai_usage_grader_system` : `81cb7fdf89bda55a...`
