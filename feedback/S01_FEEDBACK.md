@@ -1,6 +1,6 @@
 # Rétroaction automatisée -- S01 (L'IA générative et l'ère agentique : orchestrer des experts sans en être un)
 
-_Générée le 2026-05-28T18:33:21+00:00 -- Run `20260528T180023Z-d01c8d01`_
+_Générée le 2026-05-28T20:44:43+00:00 -- Run `20260528T200936Z-acdfcf6a`_
 
 Ce document est produit par un pipeline reproductible (vérification SQL déterministe + analyse LLM du brief et de la déclaration IA). Une revue humaine précède toujours sa publication. **À ce stade expérimental, aucune note ni étiquette de niveau n'est diffusée : l'objectif est purement formatif.**
 
@@ -19,7 +19,7 @@ Vous pouvez relancer le grader local (`tools/grader/grade_brief.py`) pour obteni
 
 ## 3. Déclaration d'utilisation de l'IA
 
-> Le fichier soumis est le modèle de divulgation laissé vide : les sections demandées ne sont pas renseignées. Veuillez compléter chaque section avec des informations concrètes (outil + version, étape d'utilisation, validation humaine précise, et limites observées).
+> La déclaration fournie est le gabarit vierge et ne contient pas d'informations spécifiques sur l'usage de l'IA. Remplissez chaque section requis (outil + version, étape d'utilisation, validation humaine, limites/erreurs) avant de soumettre pour obtenir un score complet.
 
 **Sujets à ajouter ou expliciter pour la prochaine itération :**
 
@@ -39,11 +39,11 @@ Vous pouvez relancer le grader local (`tools/grader/grade_brief.py`) pour obteni
 
 ## 5. Traçabilité
 
-- **Run ID :** `20260528T180023Z-d01c8d01`
+- **Run ID :** `20260528T200936Z-acdfcf6a`
 - **Devoir :** `S01`
 - **Étudiant·e :** `tardifpm`
-- **Commit analysé :** `3f0ff01`
-- **Audit (côté instructeur) :** `tools/instructor/feedback_pipeline/audit/20260528T180023Z-d01c8d01/tardifpm/`
+- **Commit analysé :** `29dd8b8`
+- **Audit (côté instructeur) :** `tools/instructor/feedback_pipeline/audit/20260528T200936Z-acdfcf6a/tardifpm/`
 - **Prompts (SHA-256) :**
   - `rubric_grader_system` : `505f32d1d8319d66...`
   - `ai_usage_grader_system` : `81cb7fdf89bda55a...`
