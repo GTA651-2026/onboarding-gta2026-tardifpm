@@ -1,67 +1,62 @@
 # Rétroaction automatisée -- S02 (Sélectionner des solutions IA : décision, opérations, productivité)
 
-_Générée le 2026-05-28T17:57:37+00:00 -- Run `20260528T172647Z-afdf4262`_
+_Générée le 2026-05-28T21:50:20+00:00 -- Run `20260528T211725Z-bd460c4e`_
 
-Ce document est produit par un pipeline reproductible (vérification SQL déterministe + analyse LLM du brief et de la déclaration IA). Une revue humaine précède toujours sa publication. **À ce stade expérimental, aucune note ni étiquette de niveau n'est diffusée : l'objectif est purement formatif.**
+Ce document est produit par un pipeline reproductible (validation automatique du livrable + analyse LLM du brief et de la déclaration IA). Une revue humaine précède toujours sa publication. **À ce stade expérimental, aucune note ni étiquette de niveau n'est diffusée : l'objectif est purement formatif.**
 
 ---
 
-## 1. Vérification automatique de la requête SQL
+## 1. Rétroaction pédagogique sur le brief
 
-La vérification automatique n'a pas pu être réalisée (gate non applicable (type=text_artifact, must_run=False)).
-
-
-## 2. Rétroaction pédagogique sur le brief
-
-> Le rendu est essentiellement un gabarit non renseigné : les tableaux et sections demandées restent vides, ce qui empêche toute évaluation. Complétez les contextes, remplissez la grille avec justifications factuelles et proposez des recommandations distinctes par contexte pour rendre le brief défendable devant un comité.
+> Le document soumis est un gabarit clair mais non rempli : les tableaux et sections attendues sont majoritairement vides. Pour passer à une note satisfaisante, remplissez chaque cellule avec scores et justifications chiffrées et formulez des recommandations différenciées par contexte.
 
 ### Observations par dimension
 
 **Contexte organisationnel**
-- Observation : Le document contient des placeholders (« Décrivez brièvement la PME : secteur, maturité numérique, budget IA approximatif, équipe IT. ») sans description réelle des contextes.
-- Piste d'amélioration : Remplir les blocs de contexte pour la PME et la grande entreprise en précisant secteur, taille, maturité numérique, budget IA et équipe IT (chiffres ou estimations).
+- Observation : Le document ne définit pas de PME ni de grande entreprise concrètes ; les sections contextuelles sont laissées vides ou sous forme d'instructions.
+- Piste d'amélioration : Décrire brièvement pour chaque contexte le secteur, la taille exacte, la maturité numérique et un budget IA approché (ex. : PME commerce de détail, 50 employés, budget annuel 50 k$).
 
 **Justification criteres**
-- Observation : La grille de comparaison est vide : les cellules pour Impact, Faisabilité, Coût et Risque sont laissées vides pour chaque agent.
-- Piste d'amélioration : Remplir chaque cellule de la grille avec une justification factuelle ou une hypothèse vérifiable pour les quatre critères et pour les trois agents dans chaque contexte.
+- Observation : La grille de critères est présente comme tableau vide sans scores ni justifications chiffrées pour les agents.
+- Piste d'amélioration : Remplir chaque cellule de la grille avec un score et une justification factuelle ou une hypothèse vérifiable pour les quatre critères demandés.
 
 **Role specialise identifie**
-- Observation : La ligne « Rôle spécialisé orchestré » est présente mais les cellules sont vides, aucun spécialiste nommé.
-- Piste d'amélioration : Nommer précisément le rôle métier remplacé/augmenté pour chaque agent (ex. « analyste crédit », « responsable ventes ») et expliquer la valeur métier créée.
+- Observation : Les lignes destinées au 'rôle spécialisé orchestré' sont laissées vides dans les tableaux pour les deux contextes.
+- Piste d'amélioration : Nommer pour chaque agent le rôle métier précis qu'il remplace/augmente (ex. : 'analyste crédit', 'responsable ventes') et illustrer par un exemple métier.
 
 **Recommandation argumentee**
-- Observation : Les sections « Recommandation pour la PME » et « Recommandation pour la grande entreprise » sont des placeholders sans recommandation effective.
-- Piste d'amélioration : Formuler une recommandation distincte par contexte (2–3 phrases) et expliquer pourquoi les autres options ont été écartées en termes de compromis valeur/risque.
+- Observation : Les sections 'Recommandation pour la PME' et pour la grande entreprise sont seulement des placeholders sans recommandation argumentée.
+- Piste d'amélioration : Formuler une recommandation distincte par contexte en expliquant pourquoi une option est retenue et pourquoi les autres sont écartées (compromis explicite).
 
 **Role specialise**
-- Observation : Aucune identification précise du rôle métier orchestré par l'agent n'est fournie dans les tableaux.
-- Piste d'amélioration : Préciser quel expert humain chaque agent remplace ou augmente et pourquoi ce rôle est stratégique pour l'organisation choisie.
+- Observation : La consigne demande de nommer le rôle métier orchestré mais aucune identification réelle n'est fournie dans le brief soumis.
+- Piste d'amélioration : Préciser pour chaque agent quel expert humain il remplace ou augmente et pourquoi ce rôle est stratégique pour l'organisation choisie.
 
 **Probleme affaires**
-- Observation : Le brief propose de « Décrire brièvement la PME » mais n'énonce aucun problème d'affaires spécifique (ex. taux, délai, coût).
-- Piste d'amélioration : Formuler en 1–2 phrases le problème d'affaires pour chaque contexte (chiffré ou contextualisé) en langage exécutif et lié à l'organisation choisie.
+- Observation : Aucun problème d'affaires chiffré ou spécifique à l'organisation n'est formulé ; les sections d'exemple restent vides.
+- Piste d'amélioration : Formuler en 1–2 phrases un problème d'affaires exécutoire pour le cas choisi (ex. : 'taux de conversion commercial de 8 %, objectif 12 % en 12 mois').
 
 **Valeur creee**
-- Observation : Aucune valeur quantifiée ou qualitative n'est indiquée dans la grille ou la synthèse — les cellules restent vides.
-- Piste d'amélioration : Estimer la valeur créée par chaque agent (chiffres ou ordre de grandeur) et relier explicitement le rôle orchestré à l'impact organisationnel.
+- Observation : La valeur créée n'est pas décrite : les cellules 'Impact d'affaires' et 'valeur' sont vides dans la grille.
+- Piste d'amélioration : Quantifier l'impact attendu (ou donner un ordre de grandeur) et lier clairement ce chiffre au rôle orchestré par l'agent.
 
 **Risque mitigation**
-- Observation : La colonne « Risque principal (et mitigation concrète) » est vide pour tous les agents.
-- Piste d'amélioration : Identifier un risque principal par agent et proposer une mitigation concrète et actionnable adaptée au contexte (ex. audit, clauses contractuelles, chiffrement).
+- Observation : Les cases 'Risque principal' et mitigation sont laissées vides pour tous les agents dans les tableaux.
+- Piste d'amélioration : Identifier pour chaque agent un risque concret (biais, fuite de données, dépendance fournisseur) et proposer une mitigation actionnable et spécifique.
 
 **Condition succes**
-- Observation : Aucune condition de succès observable et vérifiable n'est formulée dans le document.
-- Piste d'amélioration : Définir pour chaque contexte une condition de succès mesurable (indicateur et horizon temporel, ex. adoption >80% en 6 mois) reliée au contexte organisationnel.
+- Observation : La section 'Synthèse' et la demande de conditions de succès n'incluent aucune métrique observable ou horizon temporel.
+- Piste d'amélioration : Définir pour chaque contexte une condition de succès vérifiable (ex. : adoption > 70 % chez utilisateurs clés en 6 mois) liée au contexte organisationnel décrit.
 
 **Ai disclosure**
-- Observation : Le brief demande de mettre à jour ai-usage.md, mais aucun contenu d'ai-usage.md n'est inclus dans le dépôt présenté.
-- Piste d'amélioration : Ajouter le fichier ai-usage.md à la racine en listant les outils (ou 'aucun'), l'étape d'utilisation, la validation humaine et les limites observées.
+- Observation : Le brief invite à mettre à jour ai-usage.md mais le dépôt soumis ne contient pas de précision sur l'usage effectif de l'IA.
+- Piste d'amélioration : Ajouter un ai-usage.md indiquant les outils utilisés (ou 'aucun'), l'étape d'utilisation, la validation humaine et les limites observées.
 
-_Quelques points appellent une attention particulière lors de la prochaine itération : template_non_renseigné, ai-usage_missing._
+_Quelques points appellent une attention particulière lors de la prochaine itération : brief_incomplete._
 
-## 3. Déclaration d'utilisation de l'IA
+## 2. Déclaration d'utilisation de l'IA
 
-> La déclaration fournie est un gabarit non rempli — les sections demandées ne contiennent pas d'informations sur l'usage de l'IA. Veuillez compléter chaque rubrique en indiquant précisément l'outil (nom et version), l'étape d'utilisation, la validation humaine et les limites observées.
+> La déclaration fournie est le gabarit vierge sans détails remplis — elle ne répond pas aux exigences de transparence. Veuillez compléter chaque section avec des informations spécifiques (nom et version de l'outil, étape d'utilisation, validation humaine, limites observées).
 
 **Sujets à ajouter ou expliciter pour la prochaine itération :**
 
@@ -70,23 +65,23 @@ _Quelques points appellent une attention particulière lors de la prochaine ité
 - comment la sortie a été validée par l'humain
 - limites ou erreurs observées
 
-## 4. Pistes d'action pour la prochaine itération
+## 3. Pistes d'action pour la prochaine itération
 
-- Réviser le brief en tenant compte des observations par dimension de la section 2.
-- Compléter `ai-usage.md` en y ajoutant : outils utilisés (nom + version/modèle).
-- Compléter `ai-usage.md` en y ajoutant : à quelle étape l'IA a été utilisée.
-- Compléter `ai-usage.md` en y ajoutant : comment la sortie a été validée par l'humain.
-- Compléter `ai-usage.md` en y ajoutant : limites ou erreurs observées.
+- Réviser le brief en tenant compte des observations par dimension de la section 1.
+- Compléter i-usage.md en y ajoutant : outils utilisés (nom + version/modèle).
+- Compléter i-usage.md en y ajoutant : à quelle étape l'IA a été utilisée.
+- Compléter i-usage.md en y ajoutant : comment la sortie a été validée par l'humain.
+- Compléter i-usage.md en y ajoutant : limites ou erreurs observées.
 
 ---
 
-## 5. Traçabilité
+## 4. Traçabilité
 
-- **Run ID :** `20260528T172647Z-afdf4262`
+- **Run ID :** `20260528T211725Z-bd460c4e`
 - **Devoir :** `S02`
 - **Étudiant·e :** `tardifpm`
-- **Commit analysé :** `18534ce`
-- **Audit (côté instructeur) :** `tools/instructor/feedback_pipeline/audit/20260528T172647Z-afdf4262/tardifpm/`
+- **Commit analysé :** `746a324`
+- **Audit (côté instructeur) :** `tools/instructor/feedback_pipeline/audit/20260528T211725Z-bd460c4e/tardifpm/`
 - **Prompts (SHA-256) :**
   - `rubric_grader_system` : `505f32d1d8319d66...`
   - `ai_usage_grader_system` : `81cb7fdf89bda55a...`
